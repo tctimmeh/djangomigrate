@@ -1,6 +1,6 @@
-from django.test import LiveServerTestCase
+from django.test import TransactionTestCase
 
-class TestIt(LiveServerTestCase):
+class TestIt(TransactionTestCase):
    serialized_rollback = True
 
    def test_one(self):
